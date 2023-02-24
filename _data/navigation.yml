@@ -1,22 +1,22 @@
 - name: About
   class: navbar-item
   link: /
-- name: Blog
-  class: navbar-item
-  link: /blog/
+#- name: Blog
+#  class: navbar-item
+#  link: /blog/
 - name: Pricing
   class: navbar-item
   link: /pricing/
 - name: Support
   class: navbar-item
   link: /support/
-- name: eBooks
-  class: navbar-item
-  link: https://openfaas.gumroad.com/
-- name: Team
-  class: navbar-item
-  link: /team/
-- name: Docs
-  class: navbar-item
-  link: https://docs.openfaas.com/
+#- name: eBooks
+#  class: navbar-item
+#  link: https://openfaas.gumroad.com/
+#- name: Team
+#  class: navbar-item
+#  link: /team/
+#- name: Docs
+#  class: navbar-item
+#  link: https://docs.openfaas.com/
 
