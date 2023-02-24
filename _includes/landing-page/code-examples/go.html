@@ -1,0 +1,29 @@
+<div id="Go" class="tabcontent">
+<pre><code class="language-shell">$ faas-cli template store pull golang-middleware
+$ faas-cli new --lang golang-middleware go-fn
+</code></pre>
+<div class="has-text-grey-darker has-text-weight-light">
+    handler.go
+</div>
+    <pre><code class="language-go">package function
+
+import (
+	"fmt"
+	"io"
+	"net/http"
+)
+
+func Handle(w http.ResponseWriter, r *http.Request) {
+	var input []byte
+
+	if r.Body != nil {
+		defer r.Body.Close()
+		body, _ := io.ReadAll(r.Body)
+		input = body
+	}
+
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte(fmt.Sprintf("Body: %s", string(input))))
+}
+</code></pre>
+</div>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html class="has-navbar-fixed-top" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% seo %}
+	{% feed_meta %}
+
+	<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css">
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7CRubik:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/openfaas.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = yes">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+
+	{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MX51E38CEB"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', '{{ site.google_analytics_key }}',  { 'anonymize_ip': true });
+	</script>
+	{% endif %}
+	
+</head>
+
+<body>
+	<div class="app app-default">
+		<!-- Top navigation bar -->
+		{% include navigation.html %}
+
+		<!-- Content -->
+		{{ content }}
+
+		<!-- Footer nav -->
+		{% include footer-navigation.html %}
+
+		<!-- Footer nav -->
+		{% include footer.html %}
+	</div>
+
+	<script src="{{ site.baseurl }}/js/main.js"></script>
+</body>
+
+</html>

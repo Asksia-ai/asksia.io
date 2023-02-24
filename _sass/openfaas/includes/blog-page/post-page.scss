@@ -1,0 +1,155 @@
+.post-page-full {
+    .container {
+        max-width: 1000px;
+        font-size: 20px;
+
+        >h1.title,
+        >h2.subtitle {
+            text-shadow: 1px 1px 1px #656565;
+        }
+    }
+
+	.hero {
+			background-color: white;
+			background: white;
+
+		&.cover {
+			position: relative;
+
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			&:before {
+				content: '';
+
+				position: absolute;
+
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+
+				background: rgba(58, 95, 233, 0.65);
+			}
+
+			.hero-body {
+				.title,
+				.subtitle {
+					color: white;
+				}
+
+				.hero-blog-content {
+					background: white;
+
+					padding-bottom: 0rem;
+					.content {
+						font-size: 20px;
+						.post-content {
+							font-size: 20px;
+							margin-left: auto;
+							margin-right: auto;
+							width: 90%;
+						}
+					
+					}				
+				}
+			}
+		}
+
+	}
+
+	.post-tabs-date {
+		margin: $padding-step * 2 0;
+
+		.post-date {
+			font-size: 15px;
+		}
+	}
+
+	.highlight {
+		background-color: whitesmoke!important;
+		margin-bottom: $padding-step;
+
+		pre {
+			margin-bottom: $padding-step;
+			background-color: whitesmoke!important;
+		}
+	}
+
+	.author {
+		padding: $padding-step 0;
+		margin: $padding-step * 2 0;
+
+		border-top: 1px solid $of-text-grey;
+		border-bottom: 1px solid $of-text-grey;
+
+		.card {
+			background: #f3f3f3;
+		}
+
+		.team.about {
+			background: transparent;
+		}
+	}
+
+	.blog-navigation {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+
+		padding: $padding-step 0;
+	}
+
+
+	iframe {
+		width: 750px;
+		height: calc(750px / 1.78); // keep ratio
+	}
+
+    .twitter-tweet {
+        margin: 0 auto;
+        margin-top: $padding-step!important;
+        margin-bottom: $padding-step!important;
+	}
+	
+	.gumroad-cta {
+		position: relative;
+		width: 80%;
+		max-width: 710px;
+		border: #e7eef2 1px solid;
+		padding: 3rem;
+		margin-top: 3rem;
+		text-align: center;
+		background: #f5f8fa;
+		border-radius: 5px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 3rem;
+		
+		.gumroad-cta-title {
+			margin-bottom: 0;
+			font-size: 1.5rem;
+			line-height: 1.15em;
+			margin: 0 0 0.4em 0;
+			font-family: "Open Sans", sans-serif;
+			text-rendering: geometricPrecision;
+		}
+
+		img {
+			width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px;
+		}
+	}
+}
+
+@media(max-width: $tablet) {
+}
+
+@media(max-width: 810px) {
+    .post-page-full {
+        iframe {
+            width: calc(100vw - 3rem);
+            height: calc((100vw - 3rem) / 1.78); // keep ratio
+        }
+    }
+}
+
