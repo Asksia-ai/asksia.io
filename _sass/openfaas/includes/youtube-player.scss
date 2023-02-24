@@ -14,7 +14,7 @@
             position: relative;
 
             max-width: 642px;
-            max-height: 360px;
+            // max-height: 360px;
 
             width: 50vw;
             height: calc(50vw / 1.78); // keep ratio
@@ -92,8 +92,6 @@
     position: absolute;
 
     border-radius: 10px;
-
-    opacity: .3;
 
     z-index: 3;
 }
