@@ -3,8 +3,8 @@
 
 remote_theme: CloudCannon/frisco-jekyll-template@main
 
-title: OpenFaaS - Serverless Functions Made Simple
-url: "https://www.openfaas.com"
+title: Metissa - AI-generated Slides Made Simple
+url: "http://metissa-ai.github.io/""
 baseurl:
 google_analytics_key: "G-MX51E38CEB"
 # google_maps_javascript_api_key:
@@ -19,17 +19,17 @@ kramdown:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: OpenFaaS - Serverless Functions Made Simple
-author:
-  name: OpenFaaS Ltd
-  email:
-  twitter:
-    username: openfaas
-    card: summary
-social:
-  name: OpenFaaS - Serverless Functions Made Simple
-  links:
-    - https://github.com/openfaas
+description: Metissa - AI-generated Slides Made Simple
+# author:
+#   name: Metissa
+#   email:
+  # twitter:
+  #   username: openfaas
+  #   card: summary
+# social:
+#   name: OpenFaaS - Serverless Functions Made Simple
+#   links:
+#     - https://github.com/openfaas
 
 # -----
 # Build
