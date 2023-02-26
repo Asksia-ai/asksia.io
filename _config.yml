@@ -4,9 +4,9 @@
 remote_theme: CloudCannon/frisco-jekyll-template@main
 
 title: Metissa - AI-generated Slides Made Simple
-url: "http://metissa-ai.github.io/""
+url: "http://metissa-ai.github.io/"
 baseurl:
-google_analytics_key: "G-MX51E38CEB"
+# google_analytics_key: "G-MX51E38CEB"
 # google_maps_javascript_api_key:
 disqus_shortname:
 markdown: kramdown
@@ -20,16 +20,16 @@ kramdown:
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: Metissa - AI-generated Slides Made Simple
-# author:
-#   name: Metissa
-#   email:
-  # twitter:
-  #   username: openfaas
-  #   card: summary
-# social:
-#   name: OpenFaaS - Serverless Functions Made Simple
-#   links:
-#     - https://github.com/openfaas
+author:
+  name: Metissa
+  email:
+  twitter:
+    username:
+    card:
+social:
+  name: Metissa - AI-generated Slides Made Simple
+  links:
+    - https://github.com/metissa-ai/landing-page
 
 # -----
 # Build
