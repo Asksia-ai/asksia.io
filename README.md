@@ -1,5 +1,5 @@
 # OpenFaaS Website and Blog
- 
+
 This repository contains the OpenFaaS webpage and blog - https://www.openfaas.com, created using Jekyll and a modified fork of the [CloudCannon Frisco template](https://github.com/CloudCannon/frisco-jekyll-template) and built/hosted using Github Pages.
 
 ## Contributing
